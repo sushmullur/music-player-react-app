@@ -14,6 +14,7 @@ function PlayerDetails(props) {
       <div className="artist-info">
         <h3 className="details-title">{props.song.title}</h3>
         <h4 className="details-artist">{props.song.artist}</h4>
+        <h4 className="details-album">{"Album: " + props.song.album}</h4>
         <div class="line"></div>
       </div>
     </div>

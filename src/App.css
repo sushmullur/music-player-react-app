@@ -1,6 +1,6 @@
 /* App.css  */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,200;0,300;0,400;0,500;1,100;1,400&display=swap");
 
 * {
   margin: 0;
@@ -17,7 +17,7 @@ a {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: #071739;
   display: flex;
   justify-content: center;
@@ -74,11 +74,6 @@ body {
 .range:before {
   width: 3rem;
   height: 100%;
-  background: linear-gradient(
-    to right,
-    rgba(30, 24, 155, 0.5),
-    rgba(55, 3, 211, 0.85)
-  );
   border-radius: 0.25rem;
   overflow: hidden;
 }
@@ -104,7 +99,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 
 .music-player--controls .play-btn {
@@ -127,8 +122,9 @@ body {
 }
 
 .play-btn:hover {
-  transform: scale(1.2);
+  transform: scale(1);
   color: rgba(27, 5, 224, 0.95);
+  background-color: #FFFFFF;
   opacity: 1;
   box-shadow: 0 6px 9px rgba(33, 33, 33, 0.1), 0 6px 16px rgba(33, 33, 33, 0.15);
 }
@@ -152,6 +148,7 @@ body {
 .skip-btn:hover {
   /* transform: scale(1.5); */
   color: rgba(27, 5, 224, 0.95);
+  background-color: #FFFFFF;
   opacity: 1;
   box-shadow: 0 6px 9px rgba(33, 33, 33, 0.1), 0 6px 16px rgba(33, 33, 33, 0.15);
 }
@@ -175,9 +172,15 @@ body {
 }
 
 .details-artist {
-  font-size: 0.75rem;
-  font-weight: 300;
+  font-size: 1rem;
+  font-weight: 500;
   color: #000000;
+  margin-bottom: 1rem;
+}
+
+.details-album {
+  padding-bottom: 0.25rem;
+  font-weight: 500;
 }
 
 .info__song {
@@ -186,45 +189,11 @@ body {
   color: rgba(27, 5, 224, 0.95);;
 }
 
-/* Footer */
-
-.list {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.list__link {
-  transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
-}
-.list__link:focus,
-.list__link:hover {
-  color: rgba(27, 5, 224, 0.95);
-}
-
-.player__footer {
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-  padding-right: 2rem;
-  padding-left: 2rem;
-}
-
-.list--footer a {
-  opacity: 0.5;
-}
-.list--footer a:focus,
-.list--footer a:hover {
-  opacity: 0.9;
-}
-.list--footer {
-  justify-content: space-between;
-}
 
 /* Next songs */
 
 .text-anim {
-  font-size: 23px;
+  font-size: 20px;
   font-weight: 550;
   color: black;
   text-align: center;
@@ -236,45 +205,19 @@ body {
   position: absolute;
   display: flex;
   flex-direction: row;
+  font-weight: 500;
   padding: 1px;
   height: 4em;
 }
 
 .nextsong-details img {
-  border-radius: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
-    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-}
+  border-radius: 0.25rem;
+  }
 
 .nextsong-details p {
   display: flex;
-  flex-direction: row;
-  margin-left: 10px;
+  flex-direction: column;
+  margin-left: 5px;
   align-items: center;
-}
-
-/* Animation */
-
-@-webkit-keyframes background-scroll {
-  100% {
-    background-position: 50px 50px;
-  }
-}
-@-moz-keyframes background-scroll {
-  100% {
-    background-position: 50px 50px;
-  }
-}
-@-o-keyframes background-scroll {
-  100% {
-    background-position: 50px 50px;
-  }
-}
-@keyframes background-scroll {
-  100% {
-    background-position: 50px 50px;
-  }
+  font-weight: 500;
 }
