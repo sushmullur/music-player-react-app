@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "//music-player-react-app/static/css/main.3a5438dc.css",
+    "main.js": "//music-player-react-app/static/js/main.ff58d0d3.js",
+    "index.html": "//music-player-react-app/index.html",
+    "main.3a5438dc.css.map": "//music-player-react-app/static/css/main.3a5438dc.css.map",
+    "main.ff58d0d3.js.map": "//music-player-react-app/static/js/main.ff58d0d3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a5438dc.css",
+    "static/js/main.ff58d0d3.js"
+  ]
+}
