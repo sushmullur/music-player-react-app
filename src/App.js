@@ -1,6 +1,7 @@
 import React from 'react';
 import {useState, useEffect} from "react";
 import './App.css';
+import Player from './components/Player.js';
 
 const App=()=> {
 
