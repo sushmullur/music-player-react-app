@@ -25,13 +25,13 @@ body {
   flex-direction: column;
   text-align: center;
   /* TODO: Check this code out*/
-  /*background: url("./box.png") repeat 0 0;*/
+  /* background: url("./box.png") repeat 0 0; */
 }
 
 /* Player body */
 
 .music-player {
-  margin-top: 7rem;
+  margin-top: 1rem;
   margin-right: auto;
   margin-left: auto;
   max-width: 30rem;
@@ -193,12 +193,12 @@ body {
 /* Next songs */
 
 .text-anim {
-  font-size: 20px;
-  font-weight: 550;
+  font-size: 25px;
+  font-weight: 20;
   color: black;
-  text-align: center;
+  text-align: left;
   animation: effect 3s linear infinite;
-  padding-bottom: 20px;
+  padding-bottom: 1rem;
 }
 
 .nextsong-details {
@@ -206,7 +206,7 @@ body {
   display: flex;
   flex-direction: row;
   font-weight: 500;
-  padding: 1px;
+  padding: 0px;
   height: 4em;
 }
 
@@ -216,7 +216,7 @@ body {
 
 .nextsong-details p {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-left: 5px;
   align-items: center;
   font-weight: 500;

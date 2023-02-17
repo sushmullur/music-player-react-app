@@ -5,15 +5,15 @@ import Player from './components/Player.js';
 
 const App=()=> {
 
-  const [songs, setSongs] = useState([
+  const [songs] = useState([
     {
-      "title": "Worth It", 
+      "title": "I Want It Cover", 
       "artist": "Sush",
-      "album": "Sush Singles",
-      "track": "Worth It",
-      "year": "2020",
-      "img_src": "./songs_images/Worth It.jpg",
-      "src": "./songs/Worth It.mp3"
+      "album": "Sush Covers",
+      "track": "I Want It",
+      "year": "2022",
+      "img_src": "./songs_images/I Want It.jpg",
+      "src": "./songs/I Want It Cover.mp3"
     },
     {
       "title": "P.S.", 

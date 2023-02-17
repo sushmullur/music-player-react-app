@@ -42,6 +42,24 @@ function Player(props) {
 
   return (
     <>
+      <div className="app-name">
+        <h1>Beats Connect Music Player</h1>
+      </div>
+      <div className="music-player">
+        <audio
+          src={props.songs[props.currentSongIndex].src}
+          ref={audioElement}
+        ></audio>
+        <PlayerDetails song={props.songs[props.currentSongIndex]} />
+
+        <PlayerControls
+          isPlaying={isPlaying}
+          setIsPlaying={setIsPlaying}
+          SkipSong={SkipSong}
+        />
+
+        {/* <h4>Lofi Music Player React </h4> */}
+      </div>
       <p>
         <div className="text-anim">
           <strong>Upcoming Song:</strong>
@@ -62,21 +80,6 @@ function Player(props) {
           </p>
         </div>
       </p>
-      <div className="music-player">
-        <audio
-          src={props.songs[props.currentSongIndex].src}
-          ref={audioElement}
-        ></audio>
-        <PlayerDetails song={props.songs[props.currentSongIndex]} />
-
-        <PlayerControls
-          isPlaying={isPlaying}
-          setIsPlaying={setIsPlaying}
-          SkipSong={SkipSong}
-        />
-
-        {/* <h4>Lofi Music Player React </h4> */}
-      </div>
     </>
   );
 }
